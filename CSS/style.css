@@ -1,0 +1,40 @@
+/* Univeral Selector */
+*,
+*::before,
+*::after{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* navbar responsiveness */
+img[ alt="logo"] {
+    width: 25%;
+    height: 15%;
+}
+.nav{
+}
+
+body{
+    text-align: left;
+    
+}
+
+body{
+    font-family: 'Lora', serif;
+   background-color:bisque
+  
+}
+
+/* img[alt="card-1"]{
+    width: 100%;
+    height: 25%;
+}
+img[alt="card-2"]{
+    width: 150%;
+    height: 20%;
+} */
+.card{
+    width:  100rem;
+    height: 5rem;
+}
