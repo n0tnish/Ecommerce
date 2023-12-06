@@ -13,6 +13,7 @@ img[ alt="logo"] {
     height: 15%;
 }
 .nav{
+    color: rgb(234, 225, 225)10, 144, 144);
 }
 
 body{
@@ -70,3 +71,74 @@ footer{
     position: fixed;
     bottom: 0;
 }
+/*admin*/
+body{
+    font-family: 'Lora', serif;
+   background-color:bisque
+  
+}
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+th, td {
+    padding: 8px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+}
+tr:hover {background-color: #f5f5f5;}
+
+
+/*Index.html*/
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+  }
+  
+  nav li {
+    float: left;
+  }
+  
+  nav li a {
+    display: block;
+    padding: 16px;
+    text-decoration: none;
+    color: black;
+  }
+  
+  nav li a:hover {
+    background-color: #ddd;
+  }
+  
+  nav .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+  }
+  
+  nav .dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+  }
+  
+  nav .dropdown:hover .dropdown-content {
+    display: block;
+  }
+  
+  nav input[type="text"] {
+    padding: 4px;
+  }
+  
+  nav button[type="submit"] {
+    padding: 4px 10px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+  }
