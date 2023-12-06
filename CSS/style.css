@@ -12,8 +12,8 @@ img[ alt="logo"] {
     width: 15%      ;
     height: 15%;
 }
-.nav{
-    color: rgb(234, 225, 225)10, 144, 144);
+#Immob{
+    color: RGB(25, 135, 84) ;
 }
 
 body{
@@ -25,6 +25,9 @@ body{
     font-family: 'Lora', serif;
    background-color:bisque
   
+}
+.name{
+    color: RGB(25, 135, 84);
 }
 
 /* img[alt="card-1"]{
@@ -60,7 +63,6 @@ img[alt="card-2"]{
 }
 #intro p {
     padding: 10rem;
-    justify-content: ;
     font-size: 25px;
     width: 50rem;
     margin: 4em 0 ;
@@ -88,9 +90,22 @@ th, td {
 }
 tr:hover {background-color: #f5f5f5;}
 
+/*collections*/
+.French{
+    color:RGB(25, 135, 84) ;
+}
+.Italian{
+    color:RGB(25, 135, 84) ;
+}
+.Asian{
+    color:RGB(25, 135, 84) ;
+}
+.Sculptures{
+    color:RGB(25, 135, 84) ;
+}
 
 /*Index.html*/
-nav ul {
+/*nav ul {
     list-style-type: none;
     margin: 0;
     padding: 0;
@@ -135,10 +150,10 @@ nav ul {
   nav input[type="text"] {
     padding: 4px;
   }
-  
+    */ 
   nav button[type="submit"] {
     padding: 4px 10px;
-    background-color: #4CAF50;
+    background-color: #427544;
     color: white;
     border: none;
   }
