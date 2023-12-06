@@ -1,7 +1,7 @@
 // the items of the array
 let cartItems = [];
 
-// the fuction to add the idems to the cart
+// the function to add the items to the cart
 function addItem(event) {
   event.preventDefault();
 
@@ -9,7 +9,7 @@ function addItem(event) {
   const itemName = document.getElementById('itemName').value;
   const itemPrice = document.getElementById('itemPrice').value;
 
-  //the code to make the object item thingy
+  // the code to make the object item thingy
   const item = {
     name: itemName,
     price: itemPrice
@@ -26,31 +26,43 @@ function addItem(event) {
   displayCartItems();
 }
 
-// fuctiion to display the items in the cart
+// function to delete an item from the cart
+function deleteItem(index) {
+  cartItems.splice(index, 1);
+  displayCartItems();
+}
+
+// function to replace the price of an item
+function replacePrice(index, newPrice) {
+  cartItems[index].price = newPrice;
+  displayCartItems();
+}
+
+// function to display the items in the cart
 function displayCartItems() {
-  // this is the container for the element s in the cart which means all the items will be displayed in the cart. the selected items (querty selector does it but in this case, doc.getEleById does it)
+  // this is the container for the elements in the cart which means all the items will be displayed in the cart. the selected items (querySelector does it but in this case, getElementById does it)
   const cartItemsContainer = document.getElementById('cartItems');
 
   // this one empties out the container that the elements are in
   cartItemsContainer.innerHTML = "";
 
-  // this loop is  to loop throuygh the elements in the cart. all the elements in the cart 
+  // this loop is to loop through the elements in the cart, all the elements in the cart
   for (let i = 0; i < cartItems.length; i++) {
     const item = cartItems[i];
 
-    // this one just makes a div for the elements
+    // create a div for each item
     const itemDiv = document.createElement('div');
-
-    // sets the item details as innerHTML of the div
     itemDiv.innerHTML = `
-      <p><strong>Name:</strong> ${item.name}</p>
-      <p><strong>Price:</strong> ${item.price}</p>
+      Name: ${item.name}
+      Price: ${item.price}
+      <button onclick="deleteItem(${i})">Delete</button>
+      <button onclick="replacePrice(${i}, prompt('Enter new price:'))">Replace Price</button>
     `;
 
-    // adds more items tp thee specific or selected parent element
+    // adds more items to the specific or selected parent element
     cartItemsContainer.appendChild(itemDiv);
   }
 }
 
-// this one just adds elevent listener to the form nommer
+// this one just adds event listener to the form
 document.getElementById('addItemForm').addEventListener('submit', addItem);
