@@ -2,12 +2,13 @@
 const cartItems = [
     { item: "The Fall of Icarus", price: 850000 },
     { item: "Gods, Goddesses, and Demi Gods in Olymus", price: 1270000 },
-    { item: "Product 3", price: 180000 }
+    { item: "Salome with the head of John the Baptist", price: 180000 },
+    { item: "The Birth of Venus", price: 350000 }
 ];
 
 // this is the fuction to display the items buyer has places in cart
 function displayCartItems() {
-    const cartItemsTable = document.getElementById("cartItems");
+    const cartItemsTable = document.querySelector("cartItems");
     cartItemsTable.innerHTML = ""; // this one takes all the items away (clearrs it)
 
     let totalPrice = 0;
@@ -37,7 +38,7 @@ function displayCartItems() {
         totalPrice += cartItems[i].price;
     }
 
-    document.getElementById("totalPrice").innerText = totalPrice;
+    document.querySelector("totalPrice").innerText = totalPrice;
 }
 
 // thsi one is the functiom to delete items from the cart AS A BUYER NISH PLS
