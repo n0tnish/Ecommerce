@@ -1,5 +1,5 @@
 // code for theitems of the cart
-const cartItems = [
+/*const cartItems = [
     { item: "The Fall of Icarus", price: 850000 },
     { item: "Gods, Goddesses, and Demi Gods in Olymus", price: 1270000 },
     { item: "Salome with the head of John the Baptist", price: 180000 },
@@ -48,4 +48,23 @@ function removeItem(index) {
 }
 
 // this nommer just displays the items in the c=nommer
-displayCartItems();
+displayCartItems(); */
+
+function calculateTotal() {
+    let total = 0;
+    const quantities = document.getElementsByClassName("quantity");
+    
+    for (let i = 0; i < quantities.length; i++) {
+      const price = parseInt(quantities[i].parentNode.querySelector('p').textContent.split(' ')[1]);
+      const quantity = parseInt(quantities[i].value);
+      
+      total += price * quantity;
+    }
+    
+    document.getElementById("total").textContent = "R" + total;
+  }
+  
+  function removeItem(btn) {
+    btn.closest(".cartItem").remove();
+    calculateTotal();
+  }
