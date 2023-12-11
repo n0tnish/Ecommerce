@@ -1,105 +1,152 @@
 <!DOCTYPE html>
 <html lang="en">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Immobiliare</title>
     <!--Bootstrap-->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+
     <!--CSS-->
-    <link rel="stylesheet" href="/CSS/style.css">
-    <title>Immobiliare</title>
+    <link rel="stylesheet" href="/CSS/style.css"> 
 </head>
+
 <body>
   <nav class="navbar navbar-expand-lg bg-body-tertiary">
     <div class="container-fluid">
-      <a class="navbar-brand" href="#">
-        <img src="/images/mikaelson_sigil-removebg-preview.png" alt="logo" class="img-fluid" loading="lazy">
-      </a>
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+      <img src="/images/mikaelson_sigil-removebg-preview.png" alt="logo" loading="lazy">
+      <a class="navbar-brand" href="#"><span id="Immob">Immobiliare</span></a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
-      <div class="collapse navbar-collapse" id="navbarNavDropdown">
-        <ul class="navbar-nav">
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
           <li class="nav-item">
-            <a class="nav-link active" aria-current="page" href="/index.html">Home</a>
+            <a class="nav-link active" aria-current="page" href="/index.html"><span class="home">Home</span></a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="/html/about.html">About</a>
+            <a class="nav-link" href="../html/about.html"><span class="About">About</span></a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="/html/cart.html">Cart</a>
+            <a class="nav-link" href="../html/cart.html"><span class="Cart">Cart</span></a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="/html/admin.html">Admin</a>
+            <a class="nav-link" href="./html/admin.html"><span class="Admin">Admin</span></a>
           </li>
-          <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-              Collections
-            </a>
-            <ul class="dropdown-menu">
-              <li><a class="dropdown-item" href="#">Greek Mythology</a></li>
-              <li><a class="dropdown-item" href="#">French Artists</a></li>
-              <li><a class="dropdown-item" href="#">Italian Artists</a></li>
-              <li><a class="dropdown-item" href="#"></a>Japenese Artists</li>
-            </ul>
+          <li class="nav-item">
+            <a class="nav-link" href="./html/products.html"><span class="Collection">Collection</span></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="../html/contact.html"><span class="Contact">Contact</span></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link disabled" aria-disabled="true">Disabled</a>
           </li>
         </ul>
+        <form class="d-flex" role="search">
+          <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+          <button class="btn btn-outline-success" type="submit">Search</button>
+        </form>
       </div>
     </div>
-    <form class="d-flex" role="search">
-      <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-      <button class="btn btn-outline-success" type="submit">Search</button>
-    </form>
   </nav>
-    <main class="container-fluid">
-        <section class="container"id="home">
-            <div class="row vh-100 justify-content-center align-items-center">
-                <h1 class="fs-1 text-success ">
-                    Welcome <span>
-                    to Immobiliare </span>
-                </h1>
-            </div>
-            <div>
-                <div class="card" id="icarus">
-                    <img src="/images/fall of icarus.jpg" class="card-img-top" alt="fallofIc">
-                    <div class="card-body1">
-                      <h5 class="card-title">Gods, Godesses and Demi Gods</h5>
-                      <p class="card-text">Greek Mythology has it's roots firmly ingrained in the modern and post modern world. As such it has served as inspiration to many artists throughout the ages.</p>
-                      <a href="/html/products.html" class="btn btn-success">Proceed to collection</a>
-                    </div>
-                  </div>
-                  <div class="card" id="olympus">
-                    <img src="/images/gods in olympys.jpg" class="card-img-top2" alt="fallofIc">
-                    <div class="card-body1">
-                      <h5 class="card-title">Gods and Demi Gods in Olympus</h5>
-                      <p class="card-text">The overall theme depicted by Giordano is the elevation of mankind through Wisdom and Virtue, using allegorical and mythological figures to represent different strengths and traits. It culminates in a centrepiece which presents the wealthy Medici family as the paradigm of both these qualities..</p>
-                      <a href="/html/products.html" class="btn btn-success">Proceed to collection</a>
-                    </div>
-                  </div>
-            </div>
-            <section class="container" id="intro">
-              <div class="row my-3">
-                      <span><p >Welcome to Immobiliare, the premier destination for procuring valuable and beautiful art and paintings throughout history. With a steadfast commitment to excellence, we curate an impeccable collection that celebrates the timeless beauty of art.
-        
-                        At Immobiliare  , we understand that art is not merely a decorative addition to one's space but a profound reflection of one's personality and appreciation for elevated aesthetics. Our mission is to not only provide a platform to acquire exceptional artworks but also to cultivate a deeper understanding and appreciation for the rich cultural heritage that lies within them.
-                        
-                        Our team of passionate experts and art enthusiasts meticulously sources each piece, ensuring that every artwork we offer holds significant historical, cultural, and artistic value. From masterful Renaissance paintings to awe-inspiring contemporary art, our collection spans diverse periods and genres, catering to the discerning tastes of connoisseurs and collectors alike.
-                        
-                        We take immense pride in our unwavering commitment to authenticity and scholarship. Each artwork in our collection undergoes rigorous authentication and is accompanied by thorough documentation, unraveling its provenance, historical significance, and any pertinent details intrinsic to its creation. Our knowledgeable team provides comprehensive research and expert guidance to ensure a seamless and informed acquisition process for our esteemed clientele.
-                        
-                        In addition to offering a remarkable selection of art, Immobiliare provides personalized services tailored to the unique requirements of each client. Whether you are a seasoned collector seeking to expand your portfolio, an interior designer looking to infuse elegance into a client's project, or an individual seeking a singular masterpiece, our team is dedicated to providing bespoke solutions that exceed expectations.
-                        
-                        We believe in nurturing long-lasting relationships with our clients, built on trust, integrity, and a shared passion for the art world. Our commitment to customer satisfaction is at the forefront of everything we do. From your initial inquiry to the final delivery, we guarantee a seamless and enjoyable experience, ensuring that your artwork finds its rightful place in your life.
-                        
-                        Discover the exceptional beauty and rich narratives embedded in each stroke of a paintbrush, in every artist's imagination, and in the legacies of the art world. Join us at [Business Name], where art transcends time, evokes emotions, and becomes an heirloom that lasts for generations.</p></span>
-        
-          </div>
-        </section>
 
-        <script src="/Script/code.js"></script>
-      </body>
-      <footer>
-       nish the baddie &copy;  <span id="year"></span> 
-      </footer>
+    <!-- <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <a class="navbar-brand" href="#">Immobiliare</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown"
+            aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavDropdown">
+            <ul class="navbar-nav">
+                <li class="nav-item active">
+                    <a class="nav-link" href="#">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">About</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Cart</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Admin</a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownCollections" role="button"
+                        data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Collections
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdownCollections">
+                        <a class="dropdown-item" href="#">Greek Mythology</a>
+                        <a class="dropdown-item" href="#">French Artists</a>
+                        <a class="dropdown-item" href="#">Italian Artists</a>
+                        <a class="dropdown-item" href="#">Japanese Artists</a>
+                    </div>
+                </li>
+            </ul>
+        </div>
+        <form class="form-inline my-2 my-lg-0">
+            <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+            <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+        </form>
+    </nav> -->
+
+    <div class="container mt-5">
+        <div class="row">
+            <div class="col">
+                <h3>Welcome to <span class="name">Immobiliare</span></h3>
+                <p>Welcome to Immobiliare, the premier destination for procuring valuable and beautiful art and paintings throughout history. With a steadfast commitment to excellence, we curate an impeccable collection that celebrates the timeless beauty of art.
+        
+                  At Immobiliare  , we understand that art is not merely a decorative addition to one's space but a profound reflection of one's personality and appreciation for elevated aesthetics. Our mission is to not only provide a platform to acquire exceptional artworks but also to cultivate a deeper understanding and appreciation for the rich cultural heritage that lies within them.
+                  
+                  Our team of passionate experts and art enthusiasts meticulously sources each piece, ensuring that every artwork we offer holds significant historical, cultural, and artistic value. From masterful Renaissance paintings to awe-inspiring contemporary art, our collection spans diverse periods and genres, catering to the discerning tastes of connoisseurs and collectors alike.
+                  
+                  We take immense pride in our unwavering commitment to authenticity and scholarship. Each artwork in our collection undergoes rigorous authentication and is accompanied by thorough documentation, unraveling its provenance, historical significance, and any pertinent details intrinsic to its creation. Our knowledgeable team provides comprehensive research and expert guidance to ensure a seamless and informed acquisition process for our esteemed clientele.
+                  
+                  In addition to offering a remarkable selection of art, Immobiliare provides personalized services tailored to the unique requirements of each client. Whether you are a seasoned collector seeking to expand your portfolio, an interior designer looking to infuse elegance into a client's project, or an individual seeking a singular masterpiece, our team is dedicated to providing bespoke solutions that exceed expectations.
+                  
+                  We believe in nurturing long-lasting relationships with our clients, built on trust, integrity, and a shared passion for the art world. Our commitment to customer satisfaction is at the forefront of everything we do. From your initial inquiry to the final delivery, we guarantee a seamless and enjoyable experience, ensuring that your artwork finds its rightful place in your life.
+                  
+                  Discover the exceptional beauty and rich narratives embedded in each stroke of a paintbrush, in every artist's imagination, and in the legacies of the art world. Join us at Immobiliare, where art transcends time, evokes emotions, and becomes an heirloom that lasts for generations.</p>
+            </div>
+        </div>
+    </div>
+    <div class="card" id="olympus">
+      <img src="./images/gods in olympys.jpg" class="card-img-top2" alt="fallofIc">
+      <div class="card-body1">
+        <h5 class="card-title">Gods and Demi Gods in Olympus</h5>
+        <p class="card-text">The overall theme depicted by Giordano is the elevation of mankind through Wisdom and Virtue, using allegorical and mythological figures to represent different strengths and traits. It culminates in a centrepiece which presents the wealthy Medici family as the paradigm of both these qualities..</p>
+        <a href="/html/products.html" class="btn btn-success">Proceed to collection</a>
+      </div>
+    </div> 
+    <div class="card" id="A and P">
+      <img src="./images/achillies and partoclus.jpg" class="card-img-top2" alt="ach">
+      <div class="card-body2">
+        <h5 class="card-title">Achillies and Patroculus</h5>
+        <p class="card-text">Two young lovers sitting by a pond, basking in their after-glow</p>
+        <a href="/html/products.html" class="btn btn-success">Proceed to collection</a>
+      </div>
+    </div>
+    <div class="card" id="birthofvenus">
+      <img src="./images/birthofvenus.jpg" class="card-img-top" alt="birthofvenus">
+      <div class="card-body2">
+        <h5 class="card-title">birthofvenus</h5>
+        <p class="card-text">The Birth Of Venus</p>
+        <a href="/html/products.html" class="btn btn-success">Proceed to collection</a>
+      </div>
+    </div>
+    <div class="card" id="ottoman3">
+      <img src="./images/OTTOMAN3.jpg" class="card-img-top" alt="ottoman3">
+      <div class="card-body2">
+        <h5 class="card-title">Ottoman Empire</h5>
+        <p class="card-text">Portrait of Women in the Ottoman Empire</p>
+        <a href="/html/products.html" class="btn btn-success">Proceed to collection</a>
+      </div>
+    </div>
+    <!-- Include Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+    
+</body>
+
 </html>
             

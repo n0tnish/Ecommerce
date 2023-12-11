@@ -12,8 +12,8 @@ img[ alt="logo"] {
     width: 15%      ;
     height: 15%;
 }
-.nav{
-    color: rgb(234, 225, 225)10, 144, 144);
+#Immob{
+    color: RGB(25, 135, 84) ;
 }
 
 body{
@@ -25,6 +25,9 @@ body{
     font-family: 'Lora', serif;
    background-color:bisque
   
+}
+.name{
+    color: RGB(25, 135, 84);
 }
 
 /* img[alt="card-1"]{
@@ -60,7 +63,6 @@ img[alt="card-2"]{
 }
 #intro p {
     padding: 10rem;
-    justify-content: ;
     font-size: 25px;
     width: 50rem;
     margin: 4em 0 ;
@@ -88,9 +90,22 @@ th, td {
 }
 tr:hover {background-color: #f5f5f5;}
 
+/*collections*/
+.French{
+    color:RGB(25, 135, 84) ;
+}
+.Italian{
+    color:RGB(25, 135, 84) ;
+}
+.Asian{
+    color:RGB(25, 135, 84) ;
+}
+.Sculptures{
+    color:RGB(25, 135, 84) ;
+}
 
 /*Index.html*/
-nav ul {
+/*nav ul {
     list-style-type: none;
     margin: 0;
     padding: 0;
@@ -135,10 +150,150 @@ nav ul {
   nav input[type="text"] {
     padding: 4px;
   }
-  
+    */ 
   nav button[type="submit"] {
     padding: 4px 10px;
-    background-color: #4CAF50;
+    background-color: #427544;
     color: white;
     border: none;
+  }
+/*Contact*/
+#form{
+    text-align: left;
+    display: flex;
+}
+
+
+/*Product Page (collections section) */
+
+/*.card {
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding: 10px;
+    margin: 10px;
+    display: inline-block;
+    width: 200px;
+    text-align: center;
+  }
+  
+  .card img {
+    width: 150px;
+    height: 150px;
+    object-fit: contain;
+  }
+  
+  .button-link {
+    display: block;
+    margin-top: 10px;
+    color: #fff;
+    background-color: #007bff;
+    padding: 5px 10px;
+    text-align: center;
+    border-radius: 5px;
+    text-decoration: none;
+  }
+  
+  .button-link:hover {
+    background-color: #0056b3;
+  }
+
+*/
+/*
+body {
+    text-align: center;
+    font-family: Arial, sans-serif;
+  }
+  
+  h1 {
+    margin: 20px 0;
+  }
+  
+  #cartItems {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+  }
+  
+  .cartItem {
+    width: 200px;
+    border: 1px solid #ccc;
+    padding: 10px;
+  }
+  
+  .cartItem img {
+    width: 100%;
+    max-height: 150px;
+    object-fit: cover;
+    margin-bottom: 10px;
+  }
+  
+  .quantity {
+    width: 70px;
+    margin-bottom: 5px;
+  }
+  
+  .removeBtn {
+    background-color: #ff0000;
+    color: #fff;
+    border: none;
+    padding: 5px 10px;
+    cursor: pointer;
+  }
+  
+  #totalAmount {
+    margin-top: 20px;
+  }
+  
+  .checkoutBtn {
+    background-color: #4caf50;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    font-size: 18px;
+    cursor: pointer;
+  }
+  
+  .checkoutBtn:hover {
+    background-color: #45a049;
+  }
+  */ 
+  /* Product Page */
+  .container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    padding: 20px;
+  }
+  
+  .card {
+    width: 300px;
+    background-color: #f5f5f5;
+    padding: 20px;
+    text-align: center;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+  }
+  
+  .card img {
+    width: 100%;
+    height: auto;
+    margin-bottom: 10px;
+  }
+  
+  .add-to-cart {
+    background-color: #4CAF50;
+    border: none;
+    color: white;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin-top: 10px;
+    cursor: pointer;
+  }
+  
+  .add-to-cart:hover {
+    background-color: #45a049;
   }
